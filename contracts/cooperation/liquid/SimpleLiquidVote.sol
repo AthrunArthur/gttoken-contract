@@ -62,9 +62,11 @@ contract SimpleLiquidVote is LiquidVoteBase{
   address[] public voted_voters;
 
   uint public last_cal_height;
+  bool public enable_public_vote;
 
   constructor(address _delegation) LiquidVoteBase(_delegation) public {
     last_cal_height = block.number;
+    enable_public_vote = true;
   }
 
   function _refreshAllVotes() internal{
@@ -111,11 +113,15 @@ contract SimpleLiquidVote is LiquidVoteBase{
     last_cal_height = block.number;
   }
 
+  function enablePublicVote(bool b) public isOwner{
+    enable_public_vote = b;
+  }
   function recordVoteChoice(bytes32 option, address voter) public isOwner{
     _voteChoice(option, voter);
   }
 
   function voteChoice(bytes32 option) public{
+    require(enable_public_vote, "public vote is not enabled");
     _voteChoice(option, msg.sender);
   }
 

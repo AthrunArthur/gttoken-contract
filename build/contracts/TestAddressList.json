@@ -124,25 +124,25 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.10+commit.5a6ea5b1\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"is_address_exist\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"add_address\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"get_all_addresses\",\"outputs\":[{\"name\":\"\",\"type\":\"address[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"remove_address\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"i\",\"type\":\"uint256\"}],\"name\":\"get_address\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"get_address_num\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"reset\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"addresses\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/xuepeng/git/gttoken-contract/contracts/test/TestAddressList.sol\":\"TestAddressList\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/xuepeng/git/gttoken-contract/contracts/AddressList.sol\":{\"keccak256\":\"0xedc36513f9512b34a4585cacec96a92f720672d38d54a7b1787678b5e227299d\",\"urls\":[\"bzzr://0ad020d0e9f7c57f44afa3ff92ebee0e7c5911c95b97349e0cd11d22d9d51fcf\",\"dweb:/ipfs/QmaNx7MvhyrXfqNm454AruoAPTQTLQmVRN6cRAPp1NCjRJ\"]},\"/Users/xuepeng/git/gttoken-contract/contracts/MultiSigTools.sol\":{\"keccak256\":\"0x7c7c691948c3dbf0a5ab1b6489e07fb3ac4367b1aa586c98285fd7a1f3dff01c\",\"urls\":[\"bzzr://266c98ee0446054bbf25a8f42ac0b36d1541542a88b9b933235a04767a880e73\",\"dweb:/ipfs/QmZsxRdUEttnR9Hk6tA8qXKLDMHM7WjwUE3h6TATF6XVbz\"]},\"/Users/xuepeng/git/gttoken-contract/contracts/test/TestAddressList.sol\":{\"keccak256\":\"0xb622dce3cbc26c475831a90e43a9bce16d84ba7694c14c967f841d8f452b2ac3\",\"urls\":[\"bzzr://ff8dafbe4e674e934e150b9654eed6cc6290b7fca47b3bc207aa489bebecf87a\",\"dweb:/ipfs/QmViLqcjbXiHY8XTQb3jwUz7d26TFUwDXncqgwsDQmUseU\"]},\"/Users/xuepeng/git/gttoken-contract/contracts/utils/Arrays.sol\":{\"keccak256\":\"0xf40546f74ae2d37a08048e0d263cf5188b0a23ab8f5f8bcfab2b4947f108dac1\",\"urls\":[\"bzzr://96dfa7b33540c37a65486469a2aedd32ccf727d5647b29b489896935ab371f73\",\"dweb:/ipfs/QmQbpEzUmi5wakTS1A6ezpuU9jA7r8aScTY2dzXeMvcKhv\"]}},\"version\":1}",
-  "bytecode": "0x608060405261057e806100136000396000f3fe608060405234801561001057600080fd5b50600436106100885760003560e01c8063493f4f741161005b578063493f4f741461016d578063aebf2085146101a6578063d826f88f146101c0578063edf26d9b146101c857610088565b806313bc26351461008d57806327e37f25146100c7578063395dbfae146100ef578063433c17d314610147575b600080fd5b6100b3600480360360208110156100a357600080fd5b50356001600160a01b03166101e5565b604080519115158252519081900360200190f35b6100ed600480360360208110156100dd57600080fd5b50356001600160a01b0316610203565b005b6100f761020f565b60408051602080825283518183015283519192839290830191858101910280838360005b8381101561013357818101518382015260200161011b565b505050509050019250505060405180910390f35b6100ed6004803603602081101561015d57600080fd5b50356001600160a01b0316610272565b61018a6004803603602081101561018357600080fd5b503561027b565b604080516001600160a01b039092168252519081900360200190f35b6101ae6102e6565b60408051918252519081900360200190f35b6100ed6102ec565b61018a600480360360208110156101de57600080fd5b50356102f6565b6001600160a01b031660009081526020819052604090205460ff1690565b61020c8161031d565b50565b6060600180548060200260200160405190810160405280929190818152602001828054801561026757602002820191906000526020600020905b81546001600160a01b03168152600190910190602001808311610249575b505050505090505b90565b61020c816103a6565b60015460009082106102be5760405162461bcd60e51b81526004018080602001828103825260258152602001806105256025913960400191505060405180910390fd5b600182815481106102cb57fe5b6000918252602090912001546001600160a01b031692915050565b60015490565b6102f4610471565b565b6001818154811061030357fe5b6000918252602090912001546001600160a01b0316905081565b6001600160a01b03811660009081526020819052604090205460ff16156103435761020c565b6001600160a01b03166000818152602081905260408120805460ff191660019081179091558054808201825591527fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf60180546001600160a01b0319169091179055565b6001600160a01b03811660009081526020819052604090205460ff166103cb5761020c565b6001600160a01b03811660008181526020818152604091829020805460ff19169055815163edefe12d60e01b8152600160048201526024810193909352905173__AddressArray__________________________9263edefe12d926044808301939192829003018186803b15801561044257600080fd5b505af4158015610456573d6000803e3d6000fd5b505050506040513d602081101561046c57600080fd5b505050565b60005b6001548110156104cc5760008060006001848154811061049057fe5b6000918252602080832091909101546001600160a01b031683528201929092526040019020805460ff1916911515919091179055600101610474565b50600180546000808355919091526102f49061020c9061026f907fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf6908101905b80821115610520576000815560010161050c565b509056fe416464726573734c6973743a6765745f616464726573732c206f7574206f662072616e6765a265627a7a7230582005978a8d9c9853efeb248807c604f0e7dbfb30f8fd2551fa0fa2a4228beac93164736f6c634300050a0032",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100885760003560e01c8063493f4f741161005b578063493f4f741461016d578063aebf2085146101a6578063d826f88f146101c0578063edf26d9b146101c857610088565b806313bc26351461008d57806327e37f25146100c7578063395dbfae146100ef578063433c17d314610147575b600080fd5b6100b3600480360360208110156100a357600080fd5b50356001600160a01b03166101e5565b604080519115158252519081900360200190f35b6100ed600480360360208110156100dd57600080fd5b50356001600160a01b0316610203565b005b6100f761020f565b60408051602080825283518183015283519192839290830191858101910280838360005b8381101561013357818101518382015260200161011b565b505050509050019250505060405180910390f35b6100ed6004803603602081101561015d57600080fd5b50356001600160a01b0316610272565b61018a6004803603602081101561018357600080fd5b503561027b565b604080516001600160a01b039092168252519081900360200190f35b6101ae6102e6565b60408051918252519081900360200190f35b6100ed6102ec565b61018a600480360360208110156101de57600080fd5b50356102f6565b6001600160a01b031660009081526020819052604090205460ff1690565b61020c8161031d565b50565b6060600180548060200260200160405190810160405280929190818152602001828054801561026757602002820191906000526020600020905b81546001600160a01b03168152600190910190602001808311610249575b505050505090505b90565b61020c816103a6565b60015460009082106102be5760405162461bcd60e51b81526004018080602001828103825260258152602001806105256025913960400191505060405180910390fd5b600182815481106102cb57fe5b6000918252602090912001546001600160a01b031692915050565b60015490565b6102f4610471565b565b6001818154811061030357fe5b6000918252602090912001546001600160a01b0316905081565b6001600160a01b03811660009081526020819052604090205460ff16156103435761020c565b6001600160a01b03166000818152602081905260408120805460ff191660019081179091558054808201825591527fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf60180546001600160a01b0319169091179055565b6001600160a01b03811660009081526020819052604090205460ff166103cb5761020c565b6001600160a01b03811660008181526020818152604091829020805460ff19169055815163edefe12d60e01b8152600160048201526024810193909352905173__AddressArray__________________________9263edefe12d926044808301939192829003018186803b15801561044257600080fd5b505af4158015610456573d6000803e3d6000fd5b505050506040513d602081101561046c57600080fd5b505050565b60005b6001548110156104cc5760008060006001848154811061049057fe5b6000918252602080832091909101546001600160a01b031683528201929092526040019020805460ff1916911515919091179055600101610474565b50600180546000808355919091526102f49061020c9061026f907fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf6908101905b80821115610520576000815560010161050c565b509056fe416464726573734c6973743a6765745f616464726573732c206f7574206f662072616e6765a265627a7a7230582005978a8d9c9853efeb248807c604f0e7dbfb30f8fd2551fa0fa2a4228beac93164736f6c634300050a0032",
-  "sourceMap": "64:240:11:-;;;;;;;;;",
-  "deployedSourceMap": "64:240:11:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;64:240:11;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;616:103:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;616:103:0;-1:-1:-1;;;;;616:103:0;;:::i;:::-;;;;;;;;;;;;;;;;;;107:70:11;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;107:70:11;-1:-1:-1;;;;;107:70:11;;:::i;:::-;;262:93:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:100:-1;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;262:93:0;;;;;;;;;;;;;;;;;181:76:11;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;181:76:11;-1:-1:-1;;;;;181:76:11;;:::i;359:163:0:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;359:163:0;;:::i;:::-;;;;-1:-1:-1;;;;;359:163:0;;;;;;;;;;;;;;526:86;;;:::i;:::-;;;;;;;;;;;;;;;;261:41:11;;;:::i;205:26:0:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;205:26:0;;:::i;616:103::-;-1:-1:-1;;;;;694:20:0;676:4;694:20;;;;;;;;;;;;;;616:103::o;107:70:11:-;154:18;167:4;154:12;:18::i;:::-;107:70;:::o;262:93:0:-;311:16;341:9;334:16;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;334:16:0;;;;;;;;;;;;;;;;;;;;;;;262:93;;:::o;181:76:11:-;231:21;247:4;231:15;:21::i;359:163:0:-;434:9;:16;408:7;;430:20;;422:70;;;;-1:-1:-1;;;422:70:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;505:9;515:1;505:12;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;505:12:0;;359:163;-1:-1:-1;;359:163:0:o;526:86::-;591:9;:16;526:86;:::o;261:41:11:-;289:8;:6;:8::i;:::-;261:41::o;205:26:0:-;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;205:26:0;;-1:-1:-1;205:26:0;:::o;723:145::-;-1:-1:-1;;;;;776:20:0;;:14;:20;;;;;;;;;;;;;773:32;;;798:7;;773:32;-1:-1:-1;;;;;810:20:0;:14;:20;;;;;;;;;;:27;;-1:-1:-1;;810:27:0;833:4;810:27;;;;;;27:10:-1;;23:18;;;45:23;;843:20:0;;;;;;-1:-1:-1;;;;;;843:20:0;;;;;;723:145::o;872:152::-;-1:-1:-1;;;;;929:20:0;;:14;:20;;;;;;;;;;;;;925:33;;951:7;;925:33;-1:-1:-1;;;;;963:20:0;;986:5;963:20;;;;;;;;;;;;:28;;-1:-1:-1;;963:28:0;;;997:22;;-1:-1:-1;;;997:22:0;;963:28;997:22;;;;;;;;;;;;;:16;;;;:22;;;;;963:20;;997:22;;;;;:16;:22;;;5:2:-1;;;;30:1;27;20:12;5:2;997:22:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;997:22:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;;872:152:0;:::o;1028:151::-;1064:6;1060:93;1080:9;:16;1076:20;;1060:93;;;1141:5;1110:14;:28;1125:9;1135:1;1125:12;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1125:12:0;1110:28;;;;;;;;;;;;:36;;-1:-1:-1;;1110:36:0;;;;;;;;;;-1:-1:-1;1098:3:0;1060:93;;;-1:-1:-1;1165:9:0;64:240:11;;;;;;;;;;1158:16:0;;64:240:11;;;;;;;;;;;;;;;;;;;;;;;;;;",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.10+commit.5a6ea5b1\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"is_address_exist\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"add_address\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"get_all_addresses\",\"outputs\":[{\"name\":\"\",\"type\":\"address[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"remove_address\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"i\",\"type\":\"uint256\"}],\"name\":\"get_address\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"get_address_num\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"reset\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"addresses\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/xuepeng/projects/gttoken-contract/contracts/test/TestAddressList.sol\":\"TestAddressList\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/xuepeng/projects/gttoken-contract/contracts/AddressList.sol\":{\"keccak256\":\"0xedc36513f9512b34a4585cacec96a92f720672d38d54a7b1787678b5e227299d\",\"urls\":[\"bzzr://0ad020d0e9f7c57f44afa3ff92ebee0e7c5911c95b97349e0cd11d22d9d51fcf\",\"dweb:/ipfs/QmaNx7MvhyrXfqNm454AruoAPTQTLQmVRN6cRAPp1NCjRJ\"]},\"/Users/xuepeng/projects/gttoken-contract/contracts/MultiSigTools.sol\":{\"keccak256\":\"0x7c7c691948c3dbf0a5ab1b6489e07fb3ac4367b1aa586c98285fd7a1f3dff01c\",\"urls\":[\"bzzr://266c98ee0446054bbf25a8f42ac0b36d1541542a88b9b933235a04767a880e73\",\"dweb:/ipfs/QmZsxRdUEttnR9Hk6tA8qXKLDMHM7WjwUE3h6TATF6XVbz\"]},\"/Users/xuepeng/projects/gttoken-contract/contracts/test/TestAddressList.sol\":{\"keccak256\":\"0xb622dce3cbc26c475831a90e43a9bce16d84ba7694c14c967f841d8f452b2ac3\",\"urls\":[\"bzzr://ff8dafbe4e674e934e150b9654eed6cc6290b7fca47b3bc207aa489bebecf87a\",\"dweb:/ipfs/QmViLqcjbXiHY8XTQb3jwUz7d26TFUwDXncqgwsDQmUseU\"]},\"/Users/xuepeng/projects/gttoken-contract/contracts/utils/Arrays.sol\":{\"keccak256\":\"0xf40546f74ae2d37a08048e0d263cf5188b0a23ab8f5f8bcfab2b4947f108dac1\",\"urls\":[\"bzzr://96dfa7b33540c37a65486469a2aedd32ccf727d5647b29b489896935ab371f73\",\"dweb:/ipfs/QmQbpEzUmi5wakTS1A6ezpuU9jA7r8aScTY2dzXeMvcKhv\"]}},\"version\":1}",
+  "bytecode": "0x608060405261057e806100136000396000f3fe608060405234801561001057600080fd5b50600436106100885760003560e01c8063493f4f741161005b578063493f4f741461016d578063aebf2085146101a6578063d826f88f146101c0578063edf26d9b146101c857610088565b806313bc26351461008d57806327e37f25146100c7578063395dbfae146100ef578063433c17d314610147575b600080fd5b6100b3600480360360208110156100a357600080fd5b50356001600160a01b03166101e5565b604080519115158252519081900360200190f35b6100ed600480360360208110156100dd57600080fd5b50356001600160a01b0316610203565b005b6100f761020f565b60408051602080825283518183015283519192839290830191858101910280838360005b8381101561013357818101518382015260200161011b565b505050509050019250505060405180910390f35b6100ed6004803603602081101561015d57600080fd5b50356001600160a01b0316610272565b61018a6004803603602081101561018357600080fd5b503561027b565b604080516001600160a01b039092168252519081900360200190f35b6101ae6102e6565b60408051918252519081900360200190f35b6100ed6102ec565b61018a600480360360208110156101de57600080fd5b50356102f6565b6001600160a01b031660009081526020819052604090205460ff1690565b61020c8161031d565b50565b6060600180548060200260200160405190810160405280929190818152602001828054801561026757602002820191906000526020600020905b81546001600160a01b03168152600190910190602001808311610249575b505050505090505b90565b61020c816103a6565b60015460009082106102be5760405162461bcd60e51b81526004018080602001828103825260258152602001806105256025913960400191505060405180910390fd5b600182815481106102cb57fe5b6000918252602090912001546001600160a01b031692915050565b60015490565b6102f4610471565b565b6001818154811061030357fe5b6000918252602090912001546001600160a01b0316905081565b6001600160a01b03811660009081526020819052604090205460ff16156103435761020c565b6001600160a01b03166000818152602081905260408120805460ff191660019081179091558054808201825591527fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf60180546001600160a01b0319169091179055565b6001600160a01b03811660009081526020819052604090205460ff166103cb5761020c565b6001600160a01b03811660008181526020818152604091829020805460ff19169055815163edefe12d60e01b8152600160048201526024810193909352905173__AddressArray__________________________9263edefe12d926044808301939192829003018186803b15801561044257600080fd5b505af4158015610456573d6000803e3d6000fd5b505050506040513d602081101561046c57600080fd5b505050565b60005b6001548110156104cc5760008060006001848154811061049057fe5b6000918252602080832091909101546001600160a01b031683528201929092526040019020805460ff1916911515919091179055600101610474565b50600180546000808355919091526102f49061020c9061026f907fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf6908101905b80821115610520576000815560010161050c565b509056fe416464726573734c6973743a6765745f616464726573732c206f7574206f662072616e6765a265627a7a723058203d6cf17017a166102ec913e81c5dddb3de90de390068b3620c2770c6520c6ff864736f6c634300050a0032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100885760003560e01c8063493f4f741161005b578063493f4f741461016d578063aebf2085146101a6578063d826f88f146101c0578063edf26d9b146101c857610088565b806313bc26351461008d57806327e37f25146100c7578063395dbfae146100ef578063433c17d314610147575b600080fd5b6100b3600480360360208110156100a357600080fd5b50356001600160a01b03166101e5565b604080519115158252519081900360200190f35b6100ed600480360360208110156100dd57600080fd5b50356001600160a01b0316610203565b005b6100f761020f565b60408051602080825283518183015283519192839290830191858101910280838360005b8381101561013357818101518382015260200161011b565b505050509050019250505060405180910390f35b6100ed6004803603602081101561015d57600080fd5b50356001600160a01b0316610272565b61018a6004803603602081101561018357600080fd5b503561027b565b604080516001600160a01b039092168252519081900360200190f35b6101ae6102e6565b60408051918252519081900360200190f35b6100ed6102ec565b61018a600480360360208110156101de57600080fd5b50356102f6565b6001600160a01b031660009081526020819052604090205460ff1690565b61020c8161031d565b50565b6060600180548060200260200160405190810160405280929190818152602001828054801561026757602002820191906000526020600020905b81546001600160a01b03168152600190910190602001808311610249575b505050505090505b90565b61020c816103a6565b60015460009082106102be5760405162461bcd60e51b81526004018080602001828103825260258152602001806105256025913960400191505060405180910390fd5b600182815481106102cb57fe5b6000918252602090912001546001600160a01b031692915050565b60015490565b6102f4610471565b565b6001818154811061030357fe5b6000918252602090912001546001600160a01b0316905081565b6001600160a01b03811660009081526020819052604090205460ff16156103435761020c565b6001600160a01b03166000818152602081905260408120805460ff191660019081179091558054808201825591527fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf60180546001600160a01b0319169091179055565b6001600160a01b03811660009081526020819052604090205460ff166103cb5761020c565b6001600160a01b03811660008181526020818152604091829020805460ff19169055815163edefe12d60e01b8152600160048201526024810193909352905173__AddressArray__________________________9263edefe12d926044808301939192829003018186803b15801561044257600080fd5b505af4158015610456573d6000803e3d6000fd5b505050506040513d602081101561046c57600080fd5b505050565b60005b6001548110156104cc5760008060006001848154811061049057fe5b6000918252602080832091909101546001600160a01b031683528201929092526040019020805460ff1916911515919091179055600101610474565b50600180546000808355919091526102f49061020c9061026f907fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf6908101905b80821115610520576000815560010161050c565b509056fe416464726573734c6973743a6765745f616464726573732c206f7574206f662072616e6765a265627a7a723058203d6cf17017a166102ec913e81c5dddb3de90de390068b3620c2770c6520c6ff864736f6c634300050a0032",
+  "sourceMap": "64:240:43:-;;;;;;;;;",
+  "deployedSourceMap": "64:240:43:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;64:240:43;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;616:103:7;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;616:103:7;-1:-1:-1;;;;;616:103:7;;:::i;:::-;;;;;;;;;;;;;;;;;;107:70:43;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;107:70:43;-1:-1:-1;;;;;107:70:43;;:::i;:::-;;262:93:7;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:100:-1;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;262:93:7;;;;;;;;;;;;;;;;;181:76:43;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;181:76:43;-1:-1:-1;;;;;181:76:43;;:::i;359:163:7:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;359:163:7;;:::i;:::-;;;;-1:-1:-1;;;;;359:163:7;;;;;;;;;;;;;;526:86;;;:::i;:::-;;;;;;;;;;;;;;;;261:41:43;;;:::i;205:26:7:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;205:26:7;;:::i;616:103::-;-1:-1:-1;;;;;694:20:7;676:4;694:20;;;;;;;;;;;;;;616:103::o;107:70:43:-;154:18;167:4;154:12;:18::i;:::-;107:70;:::o;262:93:7:-;311:16;341:9;334:16;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;334:16:7;;;;;;;;;;;;;;;;;;;;;;;262:93;;:::o;181:76:43:-;231:21;247:4;231:15;:21::i;359:163:7:-;434:9;:16;408:7;;430:20;;422:70;;;;-1:-1:-1;;;422:70:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;505:9;515:1;505:12;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;505:12:7;;359:163;-1:-1:-1;;359:163:7:o;526:86::-;591:9;:16;526:86;:::o;261:41:43:-;289:8;:6;:8::i;:::-;261:41::o;205:26:7:-;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;205:26:7;;-1:-1:-1;205:26:7;:::o;723:145::-;-1:-1:-1;;;;;776:20:7;;:14;:20;;;;;;;;;;;;;773:32;;;798:7;;773:32;-1:-1:-1;;;;;810:20:7;:14;:20;;;;;;;;;;:27;;-1:-1:-1;;810:27:7;833:4;810:27;;;;;;27:10:-1;;23:18;;;45:23;;843:20:7;;;;;;-1:-1:-1;;;;;;843:20:7;;;;;;723:145::o;872:152::-;-1:-1:-1;;;;;929:20:7;;:14;:20;;;;;;;;;;;;;925:33;;951:7;;925:33;-1:-1:-1;;;;;963:20:7;;986:5;963:20;;;;;;;;;;;;:28;;-1:-1:-1;;963:28:7;;;997:22;;-1:-1:-1;;;997:22:7;;963:28;997:22;;;;;;;;;;;;;:16;;;;:22;;;;;963:20;;997:22;;;;;:16;:22;;;5:2:-1;;;;30:1;27;20:12;5:2;997:22:7;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;997:22:7;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;;872:152:7;:::o;1028:151::-;1064:6;1060:93;1080:9;:16;1076:20;;1060:93;;;1141:5;1110:14;:28;1125:9;1135:1;1125:12;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1125:12:7;1110:28;;;;;;;;;;;;:36;;-1:-1:-1;;1110:36:7;;;;;;;;;;-1:-1:-1;1098:3:7;1060:93;;;-1:-1:-1;1165:9:7;64:240:43;;;;;;;;;;1158:16:7;;64:240:43;;;;;;;;;;;;;;;;;;;;;;;;;;",
   "source": "pragma solidity >=0.4.21 <0.6.0;\n\nimport \"../AddressList.sol\";\n\ncontract TestAddressList is AddressList{\n  function add_address(address addr) public{\n    _add_address(addr);\n  }\n\n  function remove_address(address addr) public{\n    _remove_address(addr);\n  }\n\n  function reset() public{\n  \t_reset();\n  }\n}\n",
-  "sourcePath": "/Users/xuepeng/git/gttoken-contract/contracts/test/TestAddressList.sol",
+  "sourcePath": "/Users/xuepeng/projects/gttoken-contract/contracts/test/TestAddressList.sol",
   "ast": {
-    "absolutePath": "/Users/xuepeng/git/gttoken-contract/contracts/test/TestAddressList.sol",
+    "absolutePath": "/Users/xuepeng/projects/gttoken-contract/contracts/test/TestAddressList.sol",
     "exportedSymbols": {
       "TestAddressList": [
-        4084
+        19037
       ]
     },
-    "id": 4085,
+    "id": 19038,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4053,
+        "id": 19006,
         "literals": [
           "solidity",
           ">=",
@@ -153,16 +153,16 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:32:11"
+        "src": "0:32:43"
       },
       {
-        "absolutePath": "/Users/xuepeng/git/gttoken-contract/contracts/AddressList.sol",
+        "absolutePath": "/Users/xuepeng/projects/gttoken-contract/contracts/AddressList.sol",
         "file": "../AddressList.sol",
-        "id": 4054,
+        "id": 19007,
         "nodeType": "ImportDirective",
-        "scope": 4085,
-        "sourceUnit": 387,
-        "src": "34:28:11",
+        "scope": 19038,
+        "sourceUnit": 2685,
+        "src": "34:28:43",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -172,40 +172,40 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 4055,
+              "id": 19008,
               "name": "AddressList",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 144,
-              "src": "92:11:11",
+              "referencedDeclaration": 2442,
+              "src": "92:11:43",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_AddressList_$144",
+                "typeIdentifier": "t_contract$_AddressList_$2442",
                 "typeString": "contract AddressList"
               }
             },
-            "id": 4056,
+            "id": 19009,
             "nodeType": "InheritanceSpecifier",
-            "src": "92:11:11"
+            "src": "92:11:43"
           }
         ],
         "contractDependencies": [
-          144
+          2442
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4084,
+        "id": 19037,
         "linearizedBaseContracts": [
-          4084,
-          144
+          19037,
+          2442
         ],
         "name": "TestAddressList",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 4065,
+              "id": 19018,
               "nodeType": "Block",
-              "src": "148:29:11",
+              "src": "148:29:43",
               "statements": [
                 {
                   "expression": {
@@ -213,12 +213,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4062,
+                        "id": 19015,
                         "name": "addr",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4058,
-                        "src": "167:4:11",
+                        "referencedDeclaration": 19011,
+                        "src": "167:4:43",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -232,18 +232,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 4061,
+                      "id": 19014,
                       "name": "_add_address",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 91,
-                      "src": "154:12:11",
+                      "referencedDeclaration": 2389,
+                      "src": "154:12:43",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 4063,
+                    "id": 19016,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -251,36 +251,36 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "154:18:11",
+                    "src": "154:18:43",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4064,
+                  "id": 19017,
                   "nodeType": "ExpressionStatement",
-                  "src": "154:18:11"
+                  "src": "154:18:43"
                 }
               ]
             },
             "documentation": null,
-            "id": 4066,
+            "id": 19019,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "add_address",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4059,
+              "id": 19012,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4058,
+                  "id": 19011,
                   "name": "addr",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4066,
-                  "src": "128:12:11",
+                  "scope": 19019,
+                  "src": "128:12:43",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -288,10 +288,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4057,
+                    "id": 19010,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "128:7:11",
+                    "src": "128:7:43",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -302,25 +302,25 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "127:14:11"
+              "src": "127:14:43"
             },
             "returnParameters": {
-              "id": 4060,
+              "id": 19013,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "148:0:11"
+              "src": "148:0:43"
             },
-            "scope": 4084,
-            "src": "107:70:11",
+            "scope": 19037,
+            "src": "107:70:43",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 4075,
+              "id": 19028,
               "nodeType": "Block",
-              "src": "225:32:11",
+              "src": "225:32:43",
               "statements": [
                 {
                   "expression": {
@@ -328,12 +328,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4072,
+                        "id": 19025,
                         "name": "addr",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4068,
-                        "src": "247:4:11",
+                        "referencedDeclaration": 19021,
+                        "src": "247:4:43",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -347,18 +347,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 4071,
+                      "id": 19024,
                       "name": "_remove_address",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 115,
-                      "src": "231:15:11",
+                      "referencedDeclaration": 2413,
+                      "src": "231:15:43",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 4073,
+                    "id": 19026,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -366,36 +366,36 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "231:21:11",
+                    "src": "231:21:43",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4074,
+                  "id": 19027,
                   "nodeType": "ExpressionStatement",
-                  "src": "231:21:11"
+                  "src": "231:21:43"
                 }
               ]
             },
             "documentation": null,
-            "id": 4076,
+            "id": 19029,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "remove_address",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4069,
+              "id": 19022,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4068,
+                  "id": 19021,
                   "name": "addr",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4076,
-                  "src": "205:12:11",
+                  "scope": 19029,
+                  "src": "205:12:43",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -403,10 +403,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4067,
+                    "id": 19020,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "205:7:11",
+                    "src": "205:7:43",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -417,25 +417,25 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "204:14:11"
+              "src": "204:14:43"
             },
             "returnParameters": {
-              "id": 4070,
+              "id": 19023,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "225:0:11"
+              "src": "225:0:43"
             },
-            "scope": 4084,
-            "src": "181:76:11",
+            "scope": 19037,
+            "src": "181:76:43",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 4082,
+              "id": 19035,
               "nodeType": "Block",
-              "src": "284:18:11",
+              "src": "284:18:43",
               "statements": [
                 {
                   "expression": {
@@ -443,18 +443,18 @@
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 4079,
+                      "id": 19032,
                       "name": "_reset",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 143,
-                      "src": "289:6:11",
+                      "referencedDeclaration": 2441,
+                      "src": "289:6:43",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
                         "typeString": "function ()"
                       }
                     },
-                    "id": 4080,
+                    "id": 19033,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -462,62 +462,62 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "289:8:11",
+                    "src": "289:8:43",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4081,
+                  "id": 19034,
                   "nodeType": "ExpressionStatement",
-                  "src": "289:8:11"
+                  "src": "289:8:43"
                 }
               ]
             },
             "documentation": null,
-            "id": 4083,
+            "id": 19036,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "reset",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4077,
+              "id": 19030,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "275:2:11"
+              "src": "275:2:43"
             },
             "returnParameters": {
-              "id": 4078,
+              "id": 19031,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "284:0:11"
+              "src": "284:0:43"
             },
-            "scope": 4084,
-            "src": "261:41:11",
+            "scope": 19037,
+            "src": "261:41:43",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 4085,
-        "src": "64:240:11"
+        "scope": 19038,
+        "src": "64:240:43"
       }
     ],
-    "src": "0:305:11"
+    "src": "0:305:43"
   },
   "legacyAST": {
-    "absolutePath": "/Users/xuepeng/git/gttoken-contract/contracts/test/TestAddressList.sol",
+    "absolutePath": "/Users/xuepeng/projects/gttoken-contract/contracts/test/TestAddressList.sol",
     "exportedSymbols": {
       "TestAddressList": [
-        4084
+        19037
       ]
     },
-    "id": 4085,
+    "id": 19038,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4053,
+        "id": 19006,
         "literals": [
           "solidity",
           ">=",
@@ -528,16 +528,16 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:32:11"
+        "src": "0:32:43"
       },
       {
-        "absolutePath": "/Users/xuepeng/git/gttoken-contract/contracts/AddressList.sol",
+        "absolutePath": "/Users/xuepeng/projects/gttoken-contract/contracts/AddressList.sol",
         "file": "../AddressList.sol",
-        "id": 4054,
+        "id": 19007,
         "nodeType": "ImportDirective",
-        "scope": 4085,
-        "sourceUnit": 387,
-        "src": "34:28:11",
+        "scope": 19038,
+        "sourceUnit": 2685,
+        "src": "34:28:43",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -547,40 +547,40 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 4055,
+              "id": 19008,
               "name": "AddressList",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 144,
-              "src": "92:11:11",
+              "referencedDeclaration": 2442,
+              "src": "92:11:43",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_AddressList_$144",
+                "typeIdentifier": "t_contract$_AddressList_$2442",
                 "typeString": "contract AddressList"
               }
             },
-            "id": 4056,
+            "id": 19009,
             "nodeType": "InheritanceSpecifier",
-            "src": "92:11:11"
+            "src": "92:11:43"
           }
         ],
         "contractDependencies": [
-          144
+          2442
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4084,
+        "id": 19037,
         "linearizedBaseContracts": [
-          4084,
-          144
+          19037,
+          2442
         ],
         "name": "TestAddressList",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 4065,
+              "id": 19018,
               "nodeType": "Block",
-              "src": "148:29:11",
+              "src": "148:29:43",
               "statements": [
                 {
                   "expression": {
@@ -588,12 +588,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4062,
+                        "id": 19015,
                         "name": "addr",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4058,
-                        "src": "167:4:11",
+                        "referencedDeclaration": 19011,
+                        "src": "167:4:43",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -607,18 +607,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 4061,
+                      "id": 19014,
                       "name": "_add_address",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 91,
-                      "src": "154:12:11",
+                      "referencedDeclaration": 2389,
+                      "src": "154:12:43",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 4063,
+                    "id": 19016,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -626,36 +626,36 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "154:18:11",
+                    "src": "154:18:43",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4064,
+                  "id": 19017,
                   "nodeType": "ExpressionStatement",
-                  "src": "154:18:11"
+                  "src": "154:18:43"
                 }
               ]
             },
             "documentation": null,
-            "id": 4066,
+            "id": 19019,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "add_address",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4059,
+              "id": 19012,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4058,
+                  "id": 19011,
                   "name": "addr",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4066,
-                  "src": "128:12:11",
+                  "scope": 19019,
+                  "src": "128:12:43",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -663,10 +663,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4057,
+                    "id": 19010,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "128:7:11",
+                    "src": "128:7:43",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -677,25 +677,25 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "127:14:11"
+              "src": "127:14:43"
             },
             "returnParameters": {
-              "id": 4060,
+              "id": 19013,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "148:0:11"
+              "src": "148:0:43"
             },
-            "scope": 4084,
-            "src": "107:70:11",
+            "scope": 19037,
+            "src": "107:70:43",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 4075,
+              "id": 19028,
               "nodeType": "Block",
-              "src": "225:32:11",
+              "src": "225:32:43",
               "statements": [
                 {
                   "expression": {
@@ -703,12 +703,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 4072,
+                        "id": 19025,
                         "name": "addr",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4068,
-                        "src": "247:4:11",
+                        "referencedDeclaration": 19021,
+                        "src": "247:4:43",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -722,18 +722,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 4071,
+                      "id": 19024,
                       "name": "_remove_address",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 115,
-                      "src": "231:15:11",
+                      "referencedDeclaration": 2413,
+                      "src": "231:15:43",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 4073,
+                    "id": 19026,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -741,36 +741,36 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "231:21:11",
+                    "src": "231:21:43",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4074,
+                  "id": 19027,
                   "nodeType": "ExpressionStatement",
-                  "src": "231:21:11"
+                  "src": "231:21:43"
                 }
               ]
             },
             "documentation": null,
-            "id": 4076,
+            "id": 19029,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "remove_address",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4069,
+              "id": 19022,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4068,
+                  "id": 19021,
                   "name": "addr",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4076,
-                  "src": "205:12:11",
+                  "scope": 19029,
+                  "src": "205:12:43",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -778,10 +778,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4067,
+                    "id": 19020,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "205:7:11",
+                    "src": "205:7:43",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -792,25 +792,25 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "204:14:11"
+              "src": "204:14:43"
             },
             "returnParameters": {
-              "id": 4070,
+              "id": 19023,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "225:0:11"
+              "src": "225:0:43"
             },
-            "scope": 4084,
-            "src": "181:76:11",
+            "scope": 19037,
+            "src": "181:76:43",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 4082,
+              "id": 19035,
               "nodeType": "Block",
-              "src": "284:18:11",
+              "src": "284:18:43",
               "statements": [
                 {
                   "expression": {
@@ -818,18 +818,18 @@
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 4079,
+                      "id": 19032,
                       "name": "_reset",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 143,
-                      "src": "289:6:11",
+                      "referencedDeclaration": 2441,
+                      "src": "289:6:43",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
                         "typeString": "function ()"
                       }
                     },
-                    "id": 4080,
+                    "id": 19033,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -837,49 +837,49 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "289:8:11",
+                    "src": "289:8:43",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4081,
+                  "id": 19034,
                   "nodeType": "ExpressionStatement",
-                  "src": "289:8:11"
+                  "src": "289:8:43"
                 }
               ]
             },
             "documentation": null,
-            "id": 4083,
+            "id": 19036,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "reset",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4077,
+              "id": 19030,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "275:2:11"
+              "src": "275:2:43"
             },
             "returnParameters": {
-              "id": 4078,
+              "id": 19031,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "284:0:11"
+              "src": "284:0:43"
             },
-            "scope": 4084,
-            "src": "261:41:11",
+            "scope": 19037,
+            "src": "261:41:43",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 4085,
-        "src": "64:240:11"
+        "scope": 19038,
+        "src": "64:240:43"
       }
     ],
-    "src": "0:305:11"
+    "src": "0:305:43"
   },
   "compiler": {
     "name": "solc",
@@ -896,7 +896,7 @@
     }
   },
   "schemaVersion": "3.0.11",
-  "updatedAt": "2019-11-03T08:10:40.996Z",
+  "updatedAt": "2020-04-27T14:47:30.177Z",
   "devdoc": {
     "methods": {}
   },

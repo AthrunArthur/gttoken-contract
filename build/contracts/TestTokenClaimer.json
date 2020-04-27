@@ -42,25 +42,25 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.10+commit.5a6ea5b1\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"_token\",\"type\":\"address\"},{\"name\":\"to\",\"type\":\"address\"}],\"name\":\"claimStdTokens\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"_token\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"_to\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"ClaimedTokens\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/xuepeng/git/gttoken-contract/contracts/test/TestTokenClaimer.sol\":\"TestTokenClaimer\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/xuepeng/git/gttoken-contract/contracts/test/TestTokenClaimer.sol\":{\"keccak256\":\"0xb927648eec458f6a1b25ff6fc03858747c895969c13bade746134bc7d97ae87d\",\"urls\":[\"bzzr://25d60e8b248ab63cda4f35f0799082b848b14af8be2eee3d7a3d9262c551c8ea\",\"dweb:/ipfs/QmexDcGfLZVDiAKijdYgjADKTxEFLD96eHjSbEvQJxytq3\"]},\"/Users/xuepeng/git/gttoken-contract/contracts/utils/TokenClaimer.sol\":{\"keccak256\":\"0x2a40fd66fecdc1e6c32b1998b62561ca2c375003d530407493b3fc59e750a69d\",\"urls\":[\"bzzr://8b66cb5b179d790f394c2b35ec3b08fefe62296663a01f588cd5de81f001733b\",\"dweb:/ipfs/QmamZNjQkJ69uMBpLntgrxwAfqkvtqAeM9e5QcUgaryzB8\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b506102df806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c8063128873dd14610030575b600080fd5b61005e6004803603604081101561004657600080fd5b506001600160a01b0381358116916020013516610060565b005b61006a828261006e565b5050565b6001600160a01b0382166100b8576040516001600160a01b03821690303180156108fc02916000818181858888f193505050501580156100b2573d6000803e3d6000fd5b5061006a565b604080516370a0823160e01b8152306004820152905183916000916001600160a01b038416916370a0823191602480830192602092919082900301818787803b15801561010457600080fd5b505af1158015610118573d6000803e3d6000fd5b505050506040513d602081101561012e57600080fd5b5051604080516001600160a01b038681166024830152604480830185905283518084039091018152606490920183526020820180516001600160e01b031663a9059cbb60e01b178152925182519495506000949189169390918291908083835b602083106101ad5780518252601f19909201916020918201910161018e565b6001836020036101000a0380198251168184511680821785525050505050509050019150506000604051808303816000865af19150503d806000811461020f576040519150601f19603f3d011682016040523d82523d6000602084013e610214565b606091505b5050905080610258576040805162461bcd60e51b815260206004820152600b60248201526a18d85b1b0819985a5b195960aa1b604482015290519081900360640190fd5b836001600160a01b0316856001600160a01b03167ff931edb47c50b4b4104c187b5814a9aef5f709e17e2ecf9617e860cacade929c846040518082815260200191505060405180910390a3505050505056fea265627a7a723058204130f1f1e90fc7123763bea01c1b46e52f270a548cf032350396073ad48efb2f64736f6c634300050a0032",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c8063128873dd14610030575b600080fd5b61005e6004803603604081101561004657600080fd5b506001600160a01b0381358116916020013516610060565b005b61006a828261006e565b5050565b6001600160a01b0382166100b8576040516001600160a01b03821690303180156108fc02916000818181858888f193505050501580156100b2573d6000803e3d6000fd5b5061006a565b604080516370a0823160e01b8152306004820152905183916000916001600160a01b038416916370a0823191602480830192602092919082900301818787803b15801561010457600080fd5b505af1158015610118573d6000803e3d6000fd5b505050506040513d602081101561012e57600080fd5b5051604080516001600160a01b038681166024830152604480830185905283518084039091018152606490920183526020820180516001600160e01b031663a9059cbb60e01b178152925182519495506000949189169390918291908083835b602083106101ad5780518252601f19909201916020918201910161018e565b6001836020036101000a0380198251168184511680821785525050505050509050019150506000604051808303816000865af19150503d806000811461020f576040519150601f19603f3d011682016040523d82523d6000602084013e610214565b606091505b5050905080610258576040805162461bcd60e51b815260206004820152600b60248201526a18d85b1b0819985a5b195960aa1b604482015290519081900360640190fd5b836001600160a01b0316856001600160a01b03167ff931edb47c50b4b4104c187b5814a9aef5f709e17e2ecf9617e860cacade929c846040518082815260200191505060405180910390a3505050505056fea265627a7a723058204130f1f1e90fc7123763bea01c1b46e52f270a548cf032350396073ad48efb2f64736f6c634300050a0032",
-  "sourceMap": "75:155:16:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;75:155:16;;;;;;;",
-  "deployedSourceMap": "75:155:16:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;75:155:16;;;;;;;;;;;;;;;;;;;122:103;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;;;;;;122:103:16;;;;;;;;;;:::i;:::-;;;193:27;209:6;217:2;193:15;:27::i;:::-;122:103;;:::o;690:502:20:-;-1:-1:-1;;;;;774:22:20;;770:107;;812:34;;-1:-1:-1;;;;;812:11:20;;;832:4;824:21;812:34;;;;;;;;;824:21;812:11;:34;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;812:34:20;860:7;;770:107;962:30;;;-1:-1:-1;;;962:30:20;;986:4;962:30;;;;;;930:6;;886:23;;-1:-1:-1;;;;;962:15:20;;;;;:30;;;;;;;;;;;;;;886:23;962:15;:30;;;5:2:-1;;;;30:1;27;20:12;5:2;962:30:20;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;962:30:20;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;962:30:20;1032:65;;;-1:-1:-1;;;;;1032:65:20;;;;;;;;;;;;;;;;26:21:-1;;;22:32;;;6:49;;1032:65:20;;;;;;962:30;25:18:-1;;61:17;;-1:-1;;;;;182:15;-1:-1;;;179:29;160:49;;1020:78:20;;;;962:30;;-1:-1:-1;1004:11:20;;1020;;;;:78;;;;25:18:-1;1020:78:20;;25:18:-1;36:153;66:2;61:3;58:11;36:153;;176:10;;164:23;;-1:-1;;139:12;;;;98:2;89:12;;;;114;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;1020:78:20;;;;;;;;;;;;;;;;;;;;;;;;14:1:-1;21;16:31;;;;75:4;69:11;64:16;;144:4;140:9;133:4;115:16;111:27;107:43;104:1;100:51;94:4;87:65;169:16;166:1;159:27;225:16;222:1;215:4;212:1;208:12;193:49;7:242;;16:31;36:4;31:9;;7:242;;1003:95:20;;;1116:6;1108:30;;;;;-1:-1:-1;;;1108:30:20;;;;;;;;;;;;-1:-1:-1;;;1108:30:20;;;;;;;;;;;;;;;1175:2;-1:-1:-1;;;;;1153:34:20;1167:6;-1:-1:-1;;;;;1153:34:20;;1179:7;1153:34;;;;;;;;;;;;;;;;;;690:502;;;;;:::o",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.10+commit.5a6ea5b1\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"_token\",\"type\":\"address\"},{\"name\":\"to\",\"type\":\"address\"}],\"name\":\"claimStdTokens\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"_token\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"_to\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"ClaimedTokens\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/xuepeng/projects/gttoken-contract/contracts/test/TestTokenClaimer.sol\":\"TestTokenClaimer\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/xuepeng/projects/gttoken-contract/contracts/test/TestTokenClaimer.sol\":{\"keccak256\":\"0xb927648eec458f6a1b25ff6fc03858747c895969c13bade746134bc7d97ae87d\",\"urls\":[\"bzzr://25d60e8b248ab63cda4f35f0799082b848b14af8be2eee3d7a3d9262c551c8ea\",\"dweb:/ipfs/QmexDcGfLZVDiAKijdYgjADKTxEFLD96eHjSbEvQJxytq3\"]},\"/Users/xuepeng/projects/gttoken-contract/contracts/utils/TokenClaimer.sol\":{\"keccak256\":\"0x2a40fd66fecdc1e6c32b1998b62561ca2c375003d530407493b3fc59e750a69d\",\"urls\":[\"bzzr://8b66cb5b179d790f394c2b35ec3b08fefe62296663a01f588cd5de81f001733b\",\"dweb:/ipfs/QmamZNjQkJ69uMBpLntgrxwAfqkvtqAeM9e5QcUgaryzB8\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506102df806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c8063128873dd14610030575b600080fd5b61005e6004803603604081101561004657600080fd5b506001600160a01b0381358116916020013516610060565b005b61006a828261006e565b5050565b6001600160a01b0382166100b8576040516001600160a01b03821690303180156108fc02916000818181858888f193505050501580156100b2573d6000803e3d6000fd5b5061006a565b604080516370a0823160e01b8152306004820152905183916000916001600160a01b038416916370a0823191602480830192602092919082900301818787803b15801561010457600080fd5b505af1158015610118573d6000803e3d6000fd5b505050506040513d602081101561012e57600080fd5b5051604080516001600160a01b038681166024830152604480830185905283518084039091018152606490920183526020820180516001600160e01b031663a9059cbb60e01b178152925182519495506000949189169390918291908083835b602083106101ad5780518252601f19909201916020918201910161018e565b6001836020036101000a0380198251168184511680821785525050505050509050019150506000604051808303816000865af19150503d806000811461020f576040519150601f19603f3d011682016040523d82523d6000602084013e610214565b606091505b5050905080610258576040805162461bcd60e51b815260206004820152600b60248201526a18d85b1b0819985a5b195960aa1b604482015290519081900360640190fd5b836001600160a01b0316856001600160a01b03167ff931edb47c50b4b4104c187b5814a9aef5f709e17e2ecf9617e860cacade929c846040518082815260200191505060405180910390a3505050505056fea265627a7a72305820ddd2ceac8cb8202e5bc5f95564c4d170ee06dcc7fc33673f444fb66f04b3657f64736f6c634300050a0032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c8063128873dd14610030575b600080fd5b61005e6004803603604081101561004657600080fd5b506001600160a01b0381358116916020013516610060565b005b61006a828261006e565b5050565b6001600160a01b0382166100b8576040516001600160a01b03821690303180156108fc02916000818181858888f193505050501580156100b2573d6000803e3d6000fd5b5061006a565b604080516370a0823160e01b8152306004820152905183916000916001600160a01b038416916370a0823191602480830192602092919082900301818787803b15801561010457600080fd5b505af1158015610118573d6000803e3d6000fd5b505050506040513d602081101561012e57600080fd5b5051604080516001600160a01b038681166024830152604480830185905283518084039091018152606490920183526020820180516001600160e01b031663a9059cbb60e01b178152925182519495506000949189169390918291908083835b602083106101ad5780518252601f19909201916020918201910161018e565b6001836020036101000a0380198251168184511680821785525050505050509050019150506000604051808303816000865af19150503d806000811461020f576040519150601f19603f3d011682016040523d82523d6000602084013e610214565b606091505b5050905080610258576040805162461bcd60e51b815260206004820152600b60248201526a18d85b1b0819985a5b195960aa1b604482015290519081900360640190fd5b836001600160a01b0316856001600160a01b03167ff931edb47c50b4b4104c187b5814a9aef5f709e17e2ecf9617e860cacade929c846040518082815260200191505060405180910390a3505050505056fea265627a7a72305820ddd2ceac8cb8202e5bc5f95564c4d170ee06dcc7fc33673f444fb66f04b3657f64736f6c634300050a0032",
+  "sourceMap": "75:155:46:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;75:155:46;;;;;;;",
+  "deployedSourceMap": "75:155:46:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;75:155:46;;;;;;;;;;;;;;;;;;;122:103;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;;;;;;122:103:46;;;;;;;;;;:::i;:::-;;;193:27;209:6;217:2;193:15;:27::i;:::-;122:103;;:::o;690:502:51:-;-1:-1:-1;;;;;774:22:51;;770:107;;812:34;;-1:-1:-1;;;;;812:11:51;;;832:4;824:21;812:34;;;;;;;;;824:21;812:11;:34;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;812:34:51;860:7;;770:107;962:30;;;-1:-1:-1;;;962:30:51;;986:4;962:30;;;;;;930:6;;886:23;;-1:-1:-1;;;;;962:15:51;;;;;:30;;;;;;;;;;;;;;886:23;962:15;:30;;;5:2:-1;;;;30:1;27;20:12;5:2;962:30:51;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;962:30:51;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;962:30:51;1032:65;;;-1:-1:-1;;;;;1032:65:51;;;;;;;;;;;;;;;;26:21:-1;;;22:32;;;6:49;;1032:65:51;;;;;;962:30;25:18:-1;;61:17;;-1:-1;;;;;182:15;-1:-1;;;179:29;160:49;;1020:78:51;;;;962:30;;-1:-1:-1;1004:11:51;;1020;;;;:78;;;;25:18:-1;1020:78:51;;25:18:-1;36:153;66:2;61:3;58:11;36:153;;176:10;;164:23;;-1:-1;;139:12;;;;98:2;89:12;;;;114;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;1020:78:51;;;;;;;;;;;;;;;;;;;;;;;;14:1:-1;21;16:31;;;;75:4;69:11;64:16;;144:4;140:9;133:4;115:16;111:27;107:43;104:1;100:51;94:4;87:65;169:16;166:1;159:27;225:16;222:1;215:4;212:1;208:12;193:49;7:242;;16:31;36:4;31:9;;7:242;;1003:95:51;;;1116:6;1108:30;;;;;-1:-1:-1;;;1108:30:51;;;;;;;;;;;;-1:-1:-1;;;1108:30:51;;;;;;;;;;;;;;;1175:2;-1:-1:-1;;;;;1153:34:51;1167:6;-1:-1:-1;;;;;1153:34:51;;1179:7;1153:34;;;;;;;;;;;;;;;;;;690:502;;;;;:::o",
   "source": "pragma solidity >=0.4.21 <0.6.0;\r\n\r\nimport \"../utils/TokenClaimer.sol\";\r\n\r\ncontract TestTokenClaimer is TokenClaimer{\r\n\r\n\tfunction claimStdTokens(address _token, address payable to) public{\r\n\t\t_claimStdTokens(_token, to);\r\n\t}\r\n\r\n}\r\n",
-  "sourcePath": "/Users/xuepeng/git/gttoken-contract/contracts/test/TestTokenClaimer.sol",
+  "sourcePath": "/Users/xuepeng/projects/gttoken-contract/contracts/test/TestTokenClaimer.sol",
   "ast": {
-    "absolutePath": "/Users/xuepeng/git/gttoken-contract/contracts/test/TestTokenClaimer.sol",
+    "absolutePath": "/Users/xuepeng/projects/gttoken-contract/contracts/test/TestTokenClaimer.sol",
     "exportedSymbols": {
       "TestTokenClaimer": [
-        5068
+        19166
       ]
     },
-    "id": 5069,
+    "id": 19167,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 5051,
+        "id": 19149,
         "literals": [
           "solidity",
           ">=",
@@ -71,16 +71,16 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:32:16"
+        "src": "0:32:46"
       },
       {
-        "absolutePath": "/Users/xuepeng/git/gttoken-contract/contracts/utils/TokenClaimer.sol",
+        "absolutePath": "/Users/xuepeng/projects/gttoken-contract/contracts/utils/TokenClaimer.sol",
         "file": "../utils/TokenClaimer.sol",
-        "id": 5052,
+        "id": 19150,
         "nodeType": "ImportDirective",
-        "scope": 5069,
-        "sourceUnit": 5823,
-        "src": "36:35:16",
+        "scope": 19167,
+        "sourceUnit": 19994,
+        "src": "36:35:46",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -90,40 +90,40 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 5053,
+              "id": 19151,
               "name": "TokenClaimer",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 5822,
-              "src": "104:12:16",
+              "referencedDeclaration": 19993,
+              "src": "104:12:46",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_TokenClaimer_$5822",
+                "typeIdentifier": "t_contract$_TokenClaimer_$19993",
                 "typeString": "contract TokenClaimer"
               }
             },
-            "id": 5054,
+            "id": 19152,
             "nodeType": "InheritanceSpecifier",
-            "src": "104:12:16"
+            "src": "104:12:46"
           }
         ],
         "contractDependencies": [
-          5822
+          19993
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 5068,
+        "id": 19166,
         "linearizedBaseContracts": [
-          5068,
-          5822
+          19166,
+          19993
         ],
         "name": "TestTokenClaimer",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 5066,
+              "id": 19164,
               "nodeType": "Block",
-              "src": "188:37:16",
+              "src": "188:37:46",
               "statements": [
                 {
                   "expression": {
@@ -131,12 +131,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 5062,
+                        "id": 19160,
                         "name": "_token",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5056,
-                        "src": "209:6:16",
+                        "referencedDeclaration": 19154,
+                        "src": "209:6:46",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -144,12 +144,12 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 5063,
+                        "id": 19161,
                         "name": "to",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5058,
-                        "src": "217:2:16",
+                        "referencedDeclaration": 19156,
+                        "src": "217:2:46",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -167,18 +167,18 @@
                           "typeString": "address payable"
                         }
                       ],
-                      "id": 5061,
+                      "id": 19159,
                       "name": "_claimStdTokens",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5821,
-                      "src": "193:15:16",
+                      "referencedDeclaration": 19992,
+                      "src": "193:15:46",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_address_payable_$returns$__$",
                         "typeString": "function (address,address payable)"
                       }
                     },
-                    "id": 5064,
+                    "id": 19162,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -186,36 +186,36 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "193:27:16",
+                    "src": "193:27:46",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5065,
+                  "id": 19163,
                   "nodeType": "ExpressionStatement",
-                  "src": "193:27:16"
+                  "src": "193:27:46"
                 }
               ]
             },
             "documentation": null,
-            "id": 5067,
+            "id": 19165,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "claimStdTokens",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5059,
+              "id": 19157,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5056,
+                  "id": 19154,
                   "name": "_token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5067,
-                  "src": "146:14:16",
+                  "scope": 19165,
+                  "src": "146:14:46",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -223,10 +223,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5055,
+                    "id": 19153,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "146:7:16",
+                    "src": "146:7:46",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -238,11 +238,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 5058,
+                  "id": 19156,
                   "name": "to",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5067,
-                  "src": "162:18:16",
+                  "scope": 19165,
+                  "src": "162:18:46",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -250,10 +250,10 @@
                     "typeString": "address payable"
                   },
                   "typeName": {
-                    "id": 5057,
+                    "id": 19155,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "162:15:16",
+                    "src": "162:15:46",
                     "stateMutability": "payable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
@@ -264,39 +264,39 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "145:36:16"
+              "src": "145:36:46"
             },
             "returnParameters": {
-              "id": 5060,
+              "id": 19158,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "188:0:16"
+              "src": "188:0:46"
             },
-            "scope": 5068,
-            "src": "122:103:16",
+            "scope": 19166,
+            "src": "122:103:46",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 5069,
-        "src": "75:155:16"
+        "scope": 19167,
+        "src": "75:155:46"
       }
     ],
-    "src": "0:232:16"
+    "src": "0:232:46"
   },
   "legacyAST": {
-    "absolutePath": "/Users/xuepeng/git/gttoken-contract/contracts/test/TestTokenClaimer.sol",
+    "absolutePath": "/Users/xuepeng/projects/gttoken-contract/contracts/test/TestTokenClaimer.sol",
     "exportedSymbols": {
       "TestTokenClaimer": [
-        5068
+        19166
       ]
     },
-    "id": 5069,
+    "id": 19167,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 5051,
+        "id": 19149,
         "literals": [
           "solidity",
           ">=",
@@ -307,16 +307,16 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:32:16"
+        "src": "0:32:46"
       },
       {
-        "absolutePath": "/Users/xuepeng/git/gttoken-contract/contracts/utils/TokenClaimer.sol",
+        "absolutePath": "/Users/xuepeng/projects/gttoken-contract/contracts/utils/TokenClaimer.sol",
         "file": "../utils/TokenClaimer.sol",
-        "id": 5052,
+        "id": 19150,
         "nodeType": "ImportDirective",
-        "scope": 5069,
-        "sourceUnit": 5823,
-        "src": "36:35:16",
+        "scope": 19167,
+        "sourceUnit": 19994,
+        "src": "36:35:46",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -326,40 +326,40 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 5053,
+              "id": 19151,
               "name": "TokenClaimer",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 5822,
-              "src": "104:12:16",
+              "referencedDeclaration": 19993,
+              "src": "104:12:46",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_TokenClaimer_$5822",
+                "typeIdentifier": "t_contract$_TokenClaimer_$19993",
                 "typeString": "contract TokenClaimer"
               }
             },
-            "id": 5054,
+            "id": 19152,
             "nodeType": "InheritanceSpecifier",
-            "src": "104:12:16"
+            "src": "104:12:46"
           }
         ],
         "contractDependencies": [
-          5822
+          19993
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 5068,
+        "id": 19166,
         "linearizedBaseContracts": [
-          5068,
-          5822
+          19166,
+          19993
         ],
         "name": "TestTokenClaimer",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 5066,
+              "id": 19164,
               "nodeType": "Block",
-              "src": "188:37:16",
+              "src": "188:37:46",
               "statements": [
                 {
                   "expression": {
@@ -367,12 +367,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 5062,
+                        "id": 19160,
                         "name": "_token",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5056,
-                        "src": "209:6:16",
+                        "referencedDeclaration": 19154,
+                        "src": "209:6:46",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -380,12 +380,12 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 5063,
+                        "id": 19161,
                         "name": "to",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5058,
-                        "src": "217:2:16",
+                        "referencedDeclaration": 19156,
+                        "src": "217:2:46",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -403,18 +403,18 @@
                           "typeString": "address payable"
                         }
                       ],
-                      "id": 5061,
+                      "id": 19159,
                       "name": "_claimStdTokens",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5821,
-                      "src": "193:15:16",
+                      "referencedDeclaration": 19992,
+                      "src": "193:15:46",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_address_payable_$returns$__$",
                         "typeString": "function (address,address payable)"
                       }
                     },
-                    "id": 5064,
+                    "id": 19162,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -422,36 +422,36 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "193:27:16",
+                    "src": "193:27:46",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5065,
+                  "id": 19163,
                   "nodeType": "ExpressionStatement",
-                  "src": "193:27:16"
+                  "src": "193:27:46"
                 }
               ]
             },
             "documentation": null,
-            "id": 5067,
+            "id": 19165,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "claimStdTokens",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5059,
+              "id": 19157,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5056,
+                  "id": 19154,
                   "name": "_token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5067,
-                  "src": "146:14:16",
+                  "scope": 19165,
+                  "src": "146:14:46",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -459,10 +459,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5055,
+                    "id": 19153,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "146:7:16",
+                    "src": "146:7:46",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -474,11 +474,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 5058,
+                  "id": 19156,
                   "name": "to",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5067,
-                  "src": "162:18:16",
+                  "scope": 19165,
+                  "src": "162:18:46",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -486,10 +486,10 @@
                     "typeString": "address payable"
                   },
                   "typeName": {
-                    "id": 5057,
+                    "id": 19155,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "162:15:16",
+                    "src": "162:15:46",
                     "stateMutability": "payable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
@@ -500,26 +500,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "145:36:16"
+              "src": "145:36:46"
             },
             "returnParameters": {
-              "id": 5060,
+              "id": 19158,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "188:0:16"
+              "src": "188:0:46"
             },
-            "scope": 5068,
-            "src": "122:103:16",
+            "scope": 19166,
+            "src": "122:103:46",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 5069,
-        "src": "75:155:16"
+        "scope": 19167,
+        "src": "75:155:46"
       }
     ],
-    "src": "0:232:16"
+    "src": "0:232:46"
   },
   "compiler": {
     "name": "solc",
@@ -534,7 +534,7 @@
     }
   },
   "schemaVersion": "3.0.11",
-  "updatedAt": "2019-11-03T08:10:41.001Z",
+  "updatedAt": "2020-04-27T14:47:30.186Z",
   "devdoc": {
     "methods": {}
   },

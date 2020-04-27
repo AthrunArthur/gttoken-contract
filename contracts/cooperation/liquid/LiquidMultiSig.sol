@@ -15,6 +15,7 @@ contract VoteInterface{
   function getChoiceVoteNumber(bytes32 hash) public returns(uint);
   function isChoiceExist(bytes32 hash) public view returns(bool);
   function recordVoteChoice(bytes32 option, address voter) public;
+  function enablePublicVote(bool b) public;
   function voteChoice(bytes32 option) public;
 }
 
@@ -104,8 +105,9 @@ contract LiquidMultiSig{
       invokes[invokeHash].processing = false;
       invokes[invokeHash].vote_contract = VoteInterface(vote_factory.createLiquidVote(address(liquid_delegate)));
       invokes[invokeHash].exists = true;
-      invokes[invokeHash].vote_contract.addChoice(choiceHash);
+      invokes[invokeHash].vote_contract.enablePublicVote(false);
 
+      invokes[invokeHash].vote_contract.addChoice(choiceHash);
       invokes[invokeHash].vote_contract.recordVoteChoice(choiceHash, sender);
       emit valid_function_sign(name, id, 1, block.number);
       return false;
