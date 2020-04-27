@@ -39,6 +39,7 @@ async function performMigration(deployer, network, accounts) {
     funders = accounts.slice(0, 3);
     await USDT.deployed();
     usdt_address = USDT.address;
+    return ;
   }
   results['usdt'] = usdt_address;
 
