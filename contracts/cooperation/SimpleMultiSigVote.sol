@@ -14,6 +14,7 @@ contract SimpleMultiSigVote is MultiSigTools, TokenClaimer{
     address owner;
     string announcement;
     string value;
+    uint64 vote_id;
   }
 
   mapping (bytes32 => InternalData) public vote_status;
@@ -50,6 +51,7 @@ contract SimpleMultiSigVote is MultiSigTools, TokenClaimer{
     d.start_height = _start_height;
     d.end_height = _end_height;
     d.owner = msg.sender;
+    d.vote_id = 0;
     created_vote_number += 1;
     emit VoteCreate(_hash, _start_height, _end_height);
     return true;
@@ -77,11 +79,10 @@ contract SimpleMultiSigVote is MultiSigTools, TokenClaimer{
     emit VoteChange(_hash, _start_height, _end_height, announcement);
     return true;
   }
-
-  function vote(uint64 id, bytes32 _hash, string memory _value) public
+  function vote_internal(uint64 id, bytes32 _hash, string memory _value) private
     vote_exist(_hash)
     only_signer
-    is_majority_sig(id, "vote")
+    is_majority_sig_with_hash(id, "vote", keccak256(abi.encodePacked(msg.sig, id, _hash, _value)) )
     returns (bool){
     InternalData storage d = vote_status[_hash];
     require(d.start_height <= block.number, "vote not start yet");
@@ -92,6 +93,21 @@ contract SimpleMultiSigVote is MultiSigTools, TokenClaimer{
     emit VotePass(_hash, _value);
     determined_vote_number += 1;
     return true;
+  }
+
+  function vote(uint64 id, bytes32 _hash, string memory _value) public
+    returns (bool){
+    InternalData storage d = vote_status[_hash];
+    require(d.start_height <= block.number, "vote not start yet");
+    require(d.end_height >= block.number, "vote already end");
+
+    uint64 tid = id;
+    if(d.vote_id == 0){
+      d.vote_id = id;
+    }else{
+      tid = d.vote_id;
+    }
+    return vote_internal(tid, _hash, _value);
   }
 
   function isVoteDetermined(bytes32 _hash) public view returns (bool){

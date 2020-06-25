@@ -24,6 +24,12 @@ contract MultiSigTools{
     }
   }
 
+  modifier is_majority_sig_with_hash(uint64 id, string memory name, bytes32 hash) {
+    if(multisig_contract.update_and_check_reach_majority(id, name, hash, msg.sender)){
+      _;
+    }
+  }
+
   event TransferMultiSig(address _old, address _new);
 
   function transfer_multisig(uint64 id, address _contract) public only_signer

@@ -41,7 +41,7 @@ contract('LiquidDemocracy', (accounts)=>{
       w = (await democracy.getWeight(accounts[5], {from:accounts[0]})).toNumber();
       expect(w).to.equal(0);
 
-      w = (await democracy.getTotalPower(accounts[0], {from:accounts[0]})).toNumber();
+      w = (await democracy.getTotalPower({from:accounts[0]})).toNumber();
       expect(w).to.equal(5);
     });
 

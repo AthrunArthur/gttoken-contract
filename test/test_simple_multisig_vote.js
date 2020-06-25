@@ -11,6 +11,7 @@ const WeightMultiSig = artifacts.require("WeightMultiSig");
 
 const SimpleMultiSigVoteFactory = artifacts.require("SimpleMultiSigVoteFactory");
 const SimpleMultiSigVote = artifacts.require("SimpleMultiSigVote");
+const USDT = artifacts.require("USDT")
 
 contract('SimpleMultiSigVote', (accounts) =>{
   let multisig_factory = {}
@@ -21,6 +22,7 @@ contract('SimpleMultiSigVote', (accounts) =>{
 
   let wmultisig = {}
   let instance = {}
+  let token = {}
   context('with MultiSig', ()=>{
     it("init", async() =>{
           multisig_factory = await MultiSigFactory.deployed();
@@ -33,6 +35,7 @@ contract('SimpleMultiSigVote', (accounts) =>{
       tx = await up_factory.createSimpleMultiSigVote(multisig.address);
       instance = await SimpleMultiSigVote.at(tx.logs[0].args.addr);
       assert.ok(instance);
+      token = await USDT.deployed();
     })
 
     it("create/change vote", async() =>{
@@ -109,13 +112,14 @@ contract('SimpleMultiSigVote', (accounts) =>{
     it("vote", async() =>{
       hash = web3.utils.keccak256("test");
       invoke_id = await multisig.get_unused_invoke_id("vote", {from:accounts[0]});
-      await instance.vote(invoke_id, hash, "yes", {from:accounts[0]});
-      await instance.vote(invoke_id, hash, "yes", {from:accounts[1]});
+      //await instance.vote(invoke_id, hash, "yes", {from:accounts[0]});
+      //await instance.vote(invoke_id, hash, "yes", {from:accounts[1]});
       await expectRevert(instance.vote(invoke_id, hash, "yes", {from:accounts[2]}), "vote not start yet");
       block_until = await getBlockNumber() ;
       while(block_until < start_height){
         invoke_id = await multisig.get_unused_invoke_id("vote", {from:accounts[0]});
-        await instance.vote(invoke_id, hash, "yes", {from:accounts[0]});
+        //await instance.vote(invoke_id, hash, "yes", {from:accounts[0]});
+        await token.transfer(accounts[0], 0, {from:accounts[0]});
 
         block_until = await getBlockNumber() ;
       }
@@ -137,8 +141,8 @@ contract('SimpleMultiSigVote', (accounts) =>{
     it("vote again", async() =>{
       hash = web3.utils.keccak256("test");
       invoke_id = await multisig.get_unused_invoke_id("vote", {from:accounts[0]});
-      await instance.vote(invoke_id, hash, "yes", {from:accounts[0]});
-      await instance.vote(invoke_id, hash, "yes", {from:accounts[1]});
+      //await instance.vote(invoke_id, hash, "yes", {from:accounts[0]});
+      //await instance.vote(invoke_id, hash, "yes", {from:accounts[1]});
       await instance.vote(invoke_id, hash, "yes", {from:accounts[2]});
       await instance.vote(invoke_id, hash, "yes", {from:accounts[3]});
       await instance.vote(invoke_id, hash, "yes", {from:accounts[4]});
@@ -153,6 +157,37 @@ contract('SimpleMultiSigVote', (accounts) =>{
       hash = web3.utils.keccak256("test");
       invoke_id = await multisig.get_unused_invoke_id("vote", {from:accounts[0]});
       await expectRevert(instance.vote(invoke_id, hash, "yes", {from:accounts[5]}), "only a signer can call in MultiSigTools");
+    })
+
+    it("create vote/vote with different id", async() =>{
+      hash = web3.utils.keccak256("test123");
+      block_until = await getBlockNumber()
+      await expectRevert(instance.createVote(hash, 0, block_until-100),
+        "end height too small");
+
+      await instance.createVote(hash, block_until , block_until + 100, {from:accounts[8]});
+
+      const {determined:d1, start_height:s1,
+        end_height:e1, owner:owner1, announcement:ann1, value: value1} = await instance.voteInfo(hash);
+      expect(d1).to.equal(false);
+      expect(s1.toNumber()).to.not.equal(0);
+      expect(e1.toNumber()).to.equal(block_until + 100);
+      expect(owner1).to.equal(accounts[8]);
+      expect(value1).to.equal("");
+      expect(ann1).to.equal("");
+
+      invoke_id = await multisig.get_unused_invoke_id("vote", {from:accounts[0]});
+      await instance.vote(invoke_id, hash, "yes", {from:accounts[0]});
+      invoke_id = await multisig.get_unused_invoke_id("vote", {from:accounts[0]});
+      await instance.vote(invoke_id, hash, "yes", {from:accounts[1]});
+      invoke_id = await multisig.get_unused_invoke_id("vote", {from:accounts[0]});
+      await instance.vote(invoke_id, hash, "yes", {from:accounts[2]});
+
+      e = await instance.isVoteDetermined(hash);
+      expect(e).to.equal(true);
+      v = await instance.checkVoteValue(hash);
+      expect(v).to.equal("yes");
+
     })
 
   })
@@ -243,13 +278,14 @@ contract('SimpleMultiSigVote', (accounts) =>{
     it("vote with 4, yet still not enough", async() =>{
       hash = web3.utils.keccak256("test");
       invoke_id = await wmultisig.get_unused_invoke_id("vote", {from:accounts[0]});
-      await instance.vote(invoke_id, hash, "yes", {from:accounts[0]});
-      await instance.vote(invoke_id, hash, "yes", {from:accounts[1]});
+      //await instance.vote(invoke_id, hash, "yes", {from:accounts[0]});
+      //await instance.vote(invoke_id, hash, "yes", {from:accounts[1]});
       await expectRevert(instance.vote(invoke_id, hash, "yes", {from:accounts[2]}), "vote not start yet");
       block_until = await getBlockNumber() ;
       while(block_until < start_height){
         invoke_id = await wmultisig.get_unused_invoke_id("vote", {from:accounts[0]});
-        await instance.vote(invoke_id, hash, "yes", {from:accounts[0]});
+        //await instance.vote(invoke_id, hash, "yes", {from:accounts[0]});
+        await token.transfer(accounts[0], 0, {from:accounts[0]});
 
         block_until = await getBlockNumber() ;
       }
@@ -286,6 +322,7 @@ contract('SimpleMultiSigVote', (accounts) =>{
       invoke_id = await wmultisig.get_unused_invoke_id("vote", {from:accounts[0]});
       await expectRevert(instance.vote(invoke_id, hash, "yes", {from:accounts[5]}), "only a signer can call in MultiSigTools");
     })
+
 
   })
 });

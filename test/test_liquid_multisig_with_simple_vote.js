@@ -18,6 +18,7 @@ const LiquidMultiSig = artifacts.require("LiquidMultiSig");
 const LiquidDemocracyFactory = artifacts.require("LiquidDemocracyFactory");
 const LiquidDemocracy = artifacts.require("LiquidDemocracy");
 const SimpleLiquidVoteFactory = artifacts.require("SimpleLiquidVoteFactory");
+const USDT = artifacts.require("USDT")
 
 contract('SimpleMultiSigVote', (accounts) =>{
   let multisig_factory = {}
@@ -47,6 +48,8 @@ contract('SimpleMultiSigVote', (accounts) =>{
       tx = await up_factory.createSimpleMultiSigVote(multisig.address);
       instance = await SimpleMultiSigVote.at(tx.logs[0].args.addr);
       assert.ok(instance);
+
+      token = await USDT.deployed();
     })
 
     it("create/change vote", async() =>{
@@ -123,13 +126,14 @@ contract('SimpleMultiSigVote', (accounts) =>{
     it("vote", async() =>{
       hash = web3.utils.keccak256("test");
       invoke_id = await multisig.get_unused_invoke_id("vote", {from:accounts[0]});
-      await instance.vote(invoke_id, hash, "yes", {from:accounts[0]});
-      await instance.vote(invoke_id, hash, "yes", {from:accounts[1]});
+      //await instance.vote(invoke_id, hash, "yes", {from:accounts[0]});
+      //await instance.vote(invoke_id, hash, "yes", {from:accounts[1]});
       await expectRevert(instance.vote(invoke_id, hash, "yes", {from:accounts[2]}), "vote not start yet");
       block_until = await getBlockNumber() ;
       while(block_until < start_height){
         invoke_id = await multisig.get_unused_invoke_id("vote", {from:accounts[0]});
-        await instance.vote(invoke_id, hash, "yes", {from:accounts[0]});
+        //await instance.vote(invoke_id, hash, "yes", {from:accounts[0]});
+        await token.transfer(accounts[0], 0, {from:accounts[0]});
 
         block_until = await getBlockNumber() ;
       }
